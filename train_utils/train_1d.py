@@ -4,11 +4,6 @@ import matplotlib.pyplot as plt
 from .utils import save_checkpoint
 from .losses import LpLoss
 
-try:
-    import wandb
-except ImportError:
-    wandb = None
-
 
 def train_default(model, train_loader, val_loader, optimizer, scheduler, config,
                   device=torch.device('cuda:0'), use_tqdm=True):
