@@ -66,7 +66,6 @@ if __name__ == '__main__':
         parser.add_argument('--config_path', type=str, default='configs/S2S_TD/test.yaml', help='Path to the configuration file')
         parser.add_argument('--mode', type=str, default='test', help='train or test')
 
-    parser.add_argument('--log', action='store_true', help='Turn on the wandb')
     args = parser.parse_args()
     config_file = args.config_path
     with open(config_file, 'r') as stream:
