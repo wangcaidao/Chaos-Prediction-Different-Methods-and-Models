@@ -1,0 +1,1 @@
+from .models import FNO_1d, FNO_nar, LSTM_1d, LSTM_nar, MLP_1d, MLP_nar, MLP_P2P

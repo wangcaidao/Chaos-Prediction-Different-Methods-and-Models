@@ -1,0 +1,14 @@
+data:
+  datapath: 'data/Datasets/MG_onestep_test_10x200.mat'
+  n_sample: 10
+  length: 200   # sequence length L
+
+model:
+  layers: [ 32, 32, 32, 32, 32 ]
+  modes1: [ 100, 100, 100, 100 ]
+  fc_dim: 64
+  act: relu
+
+test:
+  batchsize: 100
+  ckpt: 'checkpoints/Onestep/model.pt'

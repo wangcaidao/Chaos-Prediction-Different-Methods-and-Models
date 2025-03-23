@@ -1,0 +1,16 @@
+data:
+  datapath: 'data/Datasets/MG_P2P_test_short.mat'
+  n_sample: 10  # for short-term prediction
+  nt: 2000      # for short-term prediction
+#  n_sample: 1   # for long-term prediction
+#  nt: 100000    # for long-term prediction
+
+
+model:
+  layers: [ 128, 128, 128, 128, 128 ]
+  act: relu
+
+test:
+  batchsize: 10
+  ckpt: 'checkpoints/P2P/model.pt'
+

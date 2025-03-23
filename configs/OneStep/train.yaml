@@ -1,0 +1,21 @@
+data:
+  datapath: 'data/Datasets/MG_onestep_train_20000x200.mat'
+  n_sample: 20000
+  n_val : 100
+  length: 200   # sequence length L
+
+model:
+  layers: [ 32, 32, 32, 32, 32 ]
+  modes1: [ 100, 100, 100, 100 ]
+  fc_dim: 64
+  act: relu
+
+train:
+  batchsize: 1024
+  epochs: 500
+  milestones: [ 100, 200, 300, 400 ]
+  base_lr: 0.001
+  scheduler_gamma: 0.5
+  xy_loss: 1.0
+  save_dir: 'Onestep'
+  save_name: 'model.pt'

@@ -1,0 +1,19 @@
+data:
+  datapath: 'data/Datasets/MG_P2P_train_N20000.mat'
+  n_sample: 20000
+  n_val : 100
+
+model:
+  layers: [ 128, 128, 128, 128, 128 ]
+  act: relu
+
+train:
+  batchsize: 1024
+  epochs: 500
+  milestones: [ 100, 200, 300, 400 ]
+  base_lr: 0.001
+  scheduler_gamma: 0.5
+  xy_loss: 1.0
+  diss_loss: 0.0
+  save_dir: 'P2P'
+  save_name: 'model.pt'
