@@ -37,5 +37,5 @@ end
 test_start = start_idx;
 assert(test_start > n_train + n_val, 'You need to ensure test_start > train_end to prevent overlap between the training sets and the test sets');
 
-save(['data/Rossler_P2P_train_N' num2str(n_train) '.mat'],'data_ic','data_out','val_ic','val_out');
-save('data/Rossler_P2P_test_short.mat','test_ic','test_out');
+save(['Datasets/Rossler_P2P_train_N' num2str(n_train) '.mat'],'data_ic','data_out','val_ic','val_out');
+save('Datasets/Rossler_P2P_test_short.mat','test_ic','test_out');
