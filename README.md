@@ -14,7 +14,7 @@ My environment has been exported to `environment.txt`.
 
 ## Usage:
 1. **Prepare Time Series Data**: 
-   Use the Rossler/Lorenz/MG/Ikeda_generator.m scripts under `/data` to generate time series, or use your own prepared time series. Ensure the variable name is `u` and the shape is `(time_steps x feature_dim)`. Save the data in `data/Time Series`.
+   Use the Rossler/Lorenz/MG/Ikeda_generator.m scripts under `/data` to generate time series, or use your own prepared time series. Ensure the variable name is `u` and the shape is `(time_steps x feature_dim)`. Save the data in `/data/Time Series`.
 
 2. **Create Training and Testing Datasets for Different Methods**: 
    Use the `gen_dataset_XXX.m` scripts under `/data` to generate datasets for different methods. After running, three files will be created: the training dataset, short-term testing dataset, and long-term testing dataset (except for `gen_dataset_onestep`). The generated datasets are saved in `.mat` format in `/data/Datasets`.
