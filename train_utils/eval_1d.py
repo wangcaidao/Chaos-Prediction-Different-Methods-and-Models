@@ -3,10 +3,6 @@ import numpy as np
 import torch
 import math
 import scipy.io
-try:
-    import wandb
-except ImportError:
-    wandb = None
 
 
 def eval_nar(model, dataloader, device, use_tqdm=True):
