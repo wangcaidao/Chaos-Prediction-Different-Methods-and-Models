@@ -24,10 +24,10 @@ My environment has been exported to `environment.txt`.
 
 4. **Evaluate Training Results**: 
    After training, to test the trained model, set `i=2` in the main function. We use `/configs/XXX/test.yaml` to set various hyperparameters. Testing includes short-term prediction and long-term modeling, which can be switched by changing the files used in the `.yaml` configuration. After running, the model's output will be saved as `.mat` files in the `/pred` folder. Then, use the following scripts in the root directory to visualize the results:
-   - `plot_NonDelay`: Evaluate short-term prediction results for non-delayed sequences.
-   - `plot_NonDelay_phase`: Evaluate long-term prediction results for non-delayed sequences (plot phase diagrams).
-   - `plot_TimeDelay`: Evaluate short-term prediction results for delayed sequences.
-   - `plot_TimeDelay_phase`: Evaluate long-term prediction results for delayed sequences (plot phase diagrams).
+   - `plot_NonDelay`: Evaluate short-term prediction results for Non-delayed chaotic time series systems.
+   - `plot_NonDelay_phase`: Evaluate long-term prediction results for Non-delayed chaotic time series systems (plot phase diagrams).
+   - `plot_TimeDelay`: Evaluate short-term prediction results for Time-delayed chaotic time series systems.
+   - `plot_TimeDelay_phase`: Evaluate long-term prediction results for Time-delayed chaotic time series systems (plot phase diagrams).
 
 **Additional: About Onestep**
 We also provide code for one-step prediction training and evaluation (only applicable to S2S-1P and S2S-TD). After preparing the time series, use `gen_dataset_onestep.m` to create the dataset, `train_onestep.py` for training and testing, and `plot_OneStep` to view the test results.
