@@ -14,10 +14,10 @@ My environment has been exported to `environment.txt`.
 
 ## Usage:
 1. **Prepare Time Series Data**: 
-   Use the Rossler/Lorenz/MG/Ikeda_generator.m scripts under `/data` to generate time series, or use your own prepared time series. Ensure the variable name is `u` and the shape is `(time_steps x feature_dim)`. Save the data in the `Time Series` folder.
+   Use the Rossler/Lorenz/MG/Ikeda_generator.m scripts under `/data` to generate time series, or use your own prepared time series. Ensure the variable name is `u` and the shape is `(time_steps x feature_dim)`. Save the data in `data/Time Series`.
 
 2. **Create Training and Testing Datasets for Different Methods**: 
-   Use the `gen_dataset_XXX.m` scripts under `/data` to generate datasets for different methods. After running, three files will be created: the training dataset, short-term testing dataset, and long-term testing dataset (except for `gen_dataset_onestep`). The generated datasets are saved in `.mat` format in the `Datasets` folder.
+   Use the `gen_dataset_XXX.m` scripts under `/data` to generate datasets for different methods. After running, three files will be created: the training dataset, short-term testing dataset, and long-term testing dataset (except for `gen_dataset_onestep`). The generated datasets are saved in `.mat` format in `/data/Datasets`.
 
 3. **Train Deep Learning Models**: 
    Use the `train_XXX.py` scripts in the root directory to train models using different methods. You can modify the model used by changing the `model` variable in the code. Ensure that the `in_dim` and `out_dim` defined in the model match the input and output dimensions. To train the model, set `i=1` in the main function. We use `/configs/XXX/train.yaml` to set various hyperparameters.
